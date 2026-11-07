@@ -5,6 +5,128 @@
 }
 
 body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: #fff;
+  color: #2e2f42;
   margin: 0;
-  font-family: system-ui, sans-serif;
+  padding: 24px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.search-form input {
+  padding: 8px 16px;
+  font-size: 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  outline: none;
+  width: 272px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.search-form input:hover {
+  border-color: #000;
+}
+
+.search-form input:focus {
+  border-color: #4e75ff;
+}
+
+.search-form button,
+.load-more {
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #4e75ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.search-form button:hover,
+.load-more:hover {
+  background-color: #6c8cff;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px 0;
+  max-width: 1128px;
+  justify-content: center;
+}
+
+.gallery-item {
+  width: 360px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-link {
+  display: block;
+  height: 200px;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 16px;
+  background-color: #fff;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin: 0;
+}
+
+.info-item b {
+  font-weight: 600;
+}
+
+.load-more {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.loader {
+  font-size: 16px;
+  color: #4e75ff;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.is-hidden {
+  display: none !important;
 }
