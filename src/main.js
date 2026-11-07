@@ -1,3 +1,4 @@
+import './css/styles.css';
 import { getImagesByQuery } from './js/pixabay-api.js';
 import {
   createGallery,
@@ -11,7 +12,7 @@ import {
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
-const searchForm = document.querySelector('.search-form');
+const searchForm = document.querySelector('.form');
 const loadMoreBtn = document.querySelector('.load-more');
 
 let currentQuery = '';

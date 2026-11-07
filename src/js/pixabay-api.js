@@ -10,7 +10,7 @@ export async function getImagesByQuery(query, page = 1) {
       q: query,
       image_type: 'photo',
       orientation: 'horizontal',
-      safesearch: true, // Змінено з 'true' на булеве значення true
+      safesearch: true,
       page: page,
       per_page: 15,
     },
